@@ -152,6 +152,10 @@ The app ships with Arabic (default) and English translation JSON files under `as
 4. **Implement "resume last lesson" banner** — `getLastUnfinishedLesson()` already exists on the cubit. A home-screen card prompting the user to continue where they left off would surface this.
 5. **Retry / error-recovery UI** — Show a retry button when `CoursesError` is emitted instead of a bare error message.
 6. **Offline-first course content** — Cache the course JSON from a remote API with a proper TTL and show stale data with an indicator.
+7. **Dark mode** — Add a system-aware theme toggle so the app respects the device's dark/light preference and lets the user override it manually.
+8. **Search courses** — Implement a real-time search bar on the courses screen that filters by title and description as the user types.
+9. **Per-lesson notes saved locally** — Let learners jot down timestamped notes for each lesson, persisted in local storage and accessible from a dedicated notes panel.
+10. **Remember the last playback speed** — Persist the user's chosen playback speed (e.g. 1.5×) across sessions so they never have to reset it after reopening the app.
 
 ---
 
