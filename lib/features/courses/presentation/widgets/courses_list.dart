@@ -76,7 +76,7 @@ class CoursesList extends StatelessWidget {
                                   image: AssetImage(courses[index].thumbnail),
                                   width: 100.w,
                                   height: 100.h,
-                                  fit: BoxFit.cover,
+                                  fit: BoxFit.fill,
                                 ),
                                 horizontalSpace(10.w),
                                 Expanded(
@@ -84,25 +84,6 @@ class CoursesList extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      if (isContinueWatching)
-                                        Container(
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: 8.w, vertical: 4.h),
-                                          decoration: BoxDecoration(
-                                            color: AppColor.orangColor,
-                                            borderRadius:
-                                                BorderRadius.circular(4.r),
-                                          ),
-                                          child: Text(
-                                            LocaleKeys.continueWatching.tr(),
-                                            style: GoogleFonts.nunito(
-                                              fontSize: 12.sp,
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                        ),
-                                      if (isContinueWatching)
-                                        verticalSpace(5.h),
                                       Text(
                                         lang == 'ar'
                                             ? courses[index].titleAr
@@ -184,6 +165,4 @@ class CoursesList extends StatelessWidget {
       },
     );
   }
-
-
 }
