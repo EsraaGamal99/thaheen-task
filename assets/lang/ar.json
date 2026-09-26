@@ -1,4 +1,17 @@
 {
 "appName":"ذهين",
-"splashScreenTitle":"مرحبا بكم في ذهين"
+"splashScreenTitle":"مرحبا بكم في ذهين",
+"searchCourses":"ابحث عن الدورات",
+"courses":"الدورات",
+"lessons":"الدروس",
+"continueWatching":"متابعة المشاهدة",
+"title":"العنوان",
+"instructor":"المدرب",
+"duration":"المدة",
+"lessonsCount":"عدد الدروس",
+"progress":"التقدم",
+"courseDescription":"وصف الدورة التعليمية",
+"seconds":"ثواثي",
+"empryLessons":"لا يوجد دروس متاحة الآن",
+"error":"حدث خطأ اثناء تحميل الفيديو"
 }

@@ -1,4 +1,18 @@
 {
 "appName":"Thaheen",
-"splashScreenTitle":"Welcome to Thaheen"
+"splashScreenTitle":"Welcome to Thaheen",
+"searchCourses":"Search Courses",
+"courses":"Courses",
+"lessons":"Lessons",
+"continueWatching":"Continue watching",
+"title":"Title",
+"instructor":"Instructor",
+"duration":"Duration",
+"lessonsCount":"Lessons Count",
+"progress":"Progress",
+"courseDescription":"Course Description",
+"seconds":"Seconds",
+"empryLessons":"There are no lessons avilable yet",
+"error":"Unable to load video"
+
 }

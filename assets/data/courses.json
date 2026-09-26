@@ -1,0 +1,153 @@
+{
+
+  "courses": [
+
+    {
+
+      "id": "anatomy-101",
+      "titleAr": "مقدمة في التشريح",
+      "titleEn": "Introduction to Anatomy",
+      "instructor": "د. سارة",
+      "thumbnail": "assets/images/anatomy3.jpg",
+      "lessonCount": 6,
+
+      "sections": [
+        {
+
+          "id": "s1",
+          "titleAr": "الجهاز الهيكلي",
+          "titleEn": "The Skeletal System",
+          "lessons": [
+
+            { 
+                "id": "l1",
+             "titleAr": "العظام",
+              "titleEn": "Bones", 
+              "durationSec": 45, 
+              "img":"assets/images/anatomy1.png",
+              "video": "assets/videos/player1.mp4" 
+            
+            },
+             { 
+                "id": "l2",
+             "titleAr": "العظام 2",
+              "titleEn": "Bones 2", 
+              "durationSec": 84, 
+              "img":"assets/images/anatomy2.jpg",
+              "video": "assets/videos/player22.mp4" 
+            
+            },
+             { 
+                "id": "l3",
+             "titleAr": "العظام 3",
+              "titleEn": "Bones 3", 
+              "durationSec": 74, 
+              "img":"assets/images/anatomy3.jpg",
+              "video": "assets/videos/player3.mp4" 
+            
+            }
+
+          ]
+
+        },
+         {
+
+          "id": "s2",
+
+          "titleAr": "الجهاز العضلي",
+          "titleEn": "The Muscular System",
+
+          "lessons": [
+
+            { 
+                "id": "l4",
+             "titleAr": "العضلات",
+              "titleEn": "Muscles", 
+              "durationSec": 45, 
+              "img":"assets/images/anatomy4.jpeg",
+              "video": "assets/videos/player1.mp4" 
+            
+            },
+                { 
+                    "id": "l5",
+                "titleAr": "العضلات 2",
+                "titleEn": "Muscles 2", 
+                "durationSec": 84, 
+                "img":"assets/images/anatomy5.jpeg",
+                "video": "assets/videos/player2.mp4" 
+                
+                },
+                { 
+                    "id": "l6",
+                "titleAr": "العضلات 3",
+                "titleEn": "Muscles 3", 
+                "durationSec": 74, 
+                "img":"assets/images/anatomy6.jpeg",
+                "video": "assets/videos/player3.mp4" 
+                
+                }
+
+          ]
+
+        }
+      ]
+
+    },
+    {
+
+      "id": "physiology-101",
+      "titleAr": "مقدمة في علم وظائف الأعضاء",
+      "titleEn": "Introduction to Physiology",
+      "instructor": "د. أحمد",
+      "thumbnail": "assets/images/physiology5.jpeg",
+      "lessonCount": 4,
+      "sections": [
+        {
+
+          "id": "s3",
+          "titleAr": "الجهاز الدوري",
+          "titleEn": "The Circulatory System",
+
+          "lessons": [
+
+            { 
+                "id": "l7",
+             "titleAr": "القلب",
+              "titleEn": "The Heart", 
+              "durationSec": 45, 
+              "img":"assets/images/physiology1.png",
+              "video": "assets/videos/player1.mp4" 
+            },
+                { 
+                    "id": "l8",
+                "titleAr": "القلب 2",
+                "titleEn": "The Heart 2", 
+                "durationSec": 84, 
+                "img":"assets/images/physiology2.png",
+                "video": "assets/videos/player2.mp4" 
+                }
+
+          ]
+
+        },
+            {
+    
+            "id": "s4",
+            "titleAr": "الجهاز التنفسي",
+            "titleEn": "The Respiratory System",
+    
+            "lessons": [
+    
+            
+    
+            ]
+    
+            }
+      ]
+
+    }
+
+  ]
+
+
+}
