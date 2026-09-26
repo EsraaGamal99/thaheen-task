@@ -10,6 +10,7 @@ import 'package:thaheen_task/features/courses/data/data_sources/lesson_progress_
 import 'package:thaheen_task/features/courses/data/models/lesson_model.dart';
 import 'package:thaheen_task/features/courses/data/models/lesson_progress_model.dart';
 import 'package:video_player/video_player.dart';
+import 'package:flutter/services.dart';
 
 class LessonPlayerScreen extends StatefulWidget {
   final LessonModel lesson;
@@ -65,6 +66,14 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
         autoPlay: true,
         looping: false,
         allowFullScreen: true,
+        fullScreenByDefault: false,
+        deviceOrientationsOnEnterFullScreen: const [
+          DeviceOrientation.landscapeLeft,
+          DeviceOrientation.landscapeRight,
+        ],
+        deviceOrientationsAfterFullScreen: const [
+          DeviceOrientation.portraitUp,
+        ],
       );
 
       if (mounted) setState(() {});
@@ -82,7 +91,7 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
       if (percentage >= 0.90 && !_isCompleted) {
         _isCompleted = true;
         _saveProgress(isCompleted: true);
-        if (mounted) setState(() {}); 
+        if (mounted) setState(() {});
       }
     }
   }
@@ -109,6 +118,9 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
     _videoPlayerController.removeListener(_onVideoPlaybackUpdated);
     _chewieController?.dispose();
     _videoPlayerController.dispose();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     super.dispose();
   }
 
@@ -123,7 +135,7 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
 
     if (!_isCompleted) {
       ScaffoldMessenger.of(context).showSnackBar(
-         SnackBar(
+        SnackBar(
           content: Text(LocaleKeys.finishAllLessons.tr()),
         ),
       );
@@ -160,11 +172,14 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
               ? const Center(child: CircularProgressIndicator())
               : Column(
                   children: [
-                    AspectRatio(
-                      aspectRatio: _videoPlayerController.value.aspectRatio,
-                      child: Chewie(controller: _chewieController!),
+                    Expanded(
+                      child: Center(
+                        child: AspectRatio(
+                          aspectRatio: _videoPlayerController.value.aspectRatio,
+                          child: Chewie(controller: _chewieController!),
+                        ),
+                      ),
                     ),
-                    const Spacer(),
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: ElevatedButton(
@@ -176,7 +191,9 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
                           minimumSize: const Size(double.infinity, 50),
                         ),
                         child: Text(
-                          hasNext ? LocaleKeys.nextLesson.tr() : LocaleKeys.finishCourse.tr(),
+                          hasNext
+                              ? LocaleKeys.nextLesson.tr()
+                              : LocaleKeys.finishCourse.tr(),
                           style: const TextStyle(
                               fontSize: 16, color: Colors.white),
                         ),
