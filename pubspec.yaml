@@ -26,6 +26,9 @@ dependencies:
   animator:
   flutter_svg:
   cupertino_icons:
+  video_player:
+  chewie:
+  get_it: ^9.3.0
 
 dev_dependencies:
   flutter_test:
