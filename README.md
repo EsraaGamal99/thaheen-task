@@ -169,3 +169,8 @@ The app ships with Arabic (default) and English translation JSON files under `as
 | Progress tracking logic (90 % rule, sequential unlock, persistence) | ~2 h |
 | Unit tests (3 core logic test groups) | ~1 h |
 | **Total** | **~6.5 h** |
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-09-26 at 08 16 16" src="https://github.com/user-attachments/assets/02047650-8eeb-47b2-9f6d-dec1c5afe21e" /> <img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-09-26 at 08 17 40" src="https://github.com/user-attachments/assets/2d0b02c0-42e4-49ce-aeb9-4f58c450dab3" /> <img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-09-26 at 08 16 43" src="https://github.com/user-attachments/assets/eb421d7e-2f19-4434-9963-f23d7b4f3315" />
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-09-26 at 08 18 33" src="https://github.com/user-attachments/assets/b8a1d3f4-dbd3-4c4f-8cf4-b8a3496d95b8" />
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-09-26 at 08 17 40" src="https://github.com/user-attachments/assets/b5fa30b8-83e7-45d9-bcd7-c571a5fe522c" /> <img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-09-26 at 08 21 42" src="https://github.com/user-attachments/assets/13946f31-0837-4bac-9778-38ee54ec7042" />
+
