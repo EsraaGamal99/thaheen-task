@@ -1,10 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 import 'package:thaheen_task/core/translations/locale_keys.g.dart';
+import 'package:thaheen_task/core/widgets/app_bar.dart';
+import 'package:thaheen_task/features/courses/presentation/widgets/courses_list.dart';
 
 class CoursesScreen extends StatefulWidget {
   const CoursesScreen({super.key});
@@ -27,25 +27,25 @@ class _CoursesScreenState extends State<CoursesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24),
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 60.h),
+            AppBarWidget(),
             Center(
               child: Text(
-                LocaleKeys.appName.tr(),
+                LocaleKeys.courses.tr(),
                 style: GoogleFonts.nunito(
                   fontSize: 32.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-            SizedBox(height: 40.h),
+            CoursesList(),
           ],
         ),
       ),
     );
   }
+
+
 }

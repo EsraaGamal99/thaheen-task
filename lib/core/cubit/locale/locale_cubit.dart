@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../utils/app_shared_preferences.dart';
@@ -12,9 +13,16 @@ class LocaleCubit extends Cubit<LocaleState> {
     return savedLocale == 'en' ? const Locale('en') : const Locale('ar');
   }
 
-  Future<void> changeLocale(Locale newLocale) async {
+  Future<void> toggleLocale(BuildContext context) async {
+    final newLocale = state.locale.languageCode == 'ar'
+        ? const Locale('en')
+        : const Locale('ar');
+
+    await context.setLocale(newLocale);
+
     await AppPreferences()
         .setData(AppConstants.localeKey, newLocale.languageCode);
+
     emit(LocaleState(newLocale));
   }
 }

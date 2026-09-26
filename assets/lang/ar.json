@@ -13,5 +13,13 @@
 "courseDescription":"وصف الدورة التعليمية",
 "seconds":"ثواثي",
 "empryLessons":"لا يوجد دروس متاحة الآن",
-"error":"حدث خطأ اثناء تحميل الفيديو"
+"error":"حدث خطأ اثناء تحميل الفيديو",
+"finishAllLessons":"'تهانينا! لقد أنهيت جميع الدروس",
+"finishCourse":"'إنهاء الدورة",
+"nextLesson":"'الدرس التالي",
+"thisLessonClosedNow":"هذا الدرس مغلق، أكمل الدرس السابق أولاً",
+"locked":"مغلق",
+"completed":"مكتمل",
+"inProgress":"في التقدم",
+"start":"ابدأ"
 }

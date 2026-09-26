@@ -13,6 +13,13 @@
 "courseDescription":"Course Description",
 "seconds":"Seconds",
 "empryLessons":"There are no lessons avilable yet",
-"error":"Unable to load video"
-
+"error":"Unable to load video",
+"finishAllLessons": "Congratulations! You have completed all lessons",
+"finishCourse": "Finish Course",
+"nextLesson": "Next Lesson",
+"thisLessonClosedNow": "This lesson is locked. Complete the previous lesson first",
+"locked": "Locked",
+"completed": "Completed",
+"inProgress": "In Progress",
+"start": "Start"
 }
