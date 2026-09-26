@@ -1,5 +1,5 @@
 import 'package:chewie/chewie.dart';
-import 'package:easy_localization/easy_localization.dart';
+import 'package:easy_localization/easy_localization.dart' hide TextDirection;
 import 'package:flutter/material.dart';
 import 'package:thaheen_task/core/di/dependency_injection.dart';
 import 'package:thaheen_task/core/extensions/navigation_extensions.dart';
@@ -15,6 +15,7 @@ import 'package:flutter/services.dart';
 class LessonPlayerScreen extends StatefulWidget {
   final LessonModel lesson;
   final String courseId;
+  final String lang;
   final List<LessonModel> allLessons;
   final int currentIndex;
 
@@ -24,6 +25,7 @@ class LessonPlayerScreen extends StatefulWidget {
     required this.courseId,
     required this.allLessons,
     required this.currentIndex,
+    this.lang = 'ar',
   });
 
   @override
@@ -128,7 +130,7 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
     final hasNext = widget.currentIndex < widget.allLessons.length - 1;
     if (!hasNext) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('تهانينا! لقد أنهيت جميع الدروس')),
+        SnackBar(content: Text(LocaleKeys.finishAllLessons.tr())),
       );
       return;
     }
@@ -176,7 +178,10 @@ class _LessonPlayerScreenState extends State<LessonPlayerScreen> {
                       child: Center(
                         child: AspectRatio(
                           aspectRatio: _videoPlayerController.value.aspectRatio,
-                          child: Chewie(controller: _chewieController!),
+                          child: Directionality(
+                            textDirection: TextDirection.rtl,
+                            child: Chewie(controller: _chewieController!),
+                          ),
                         ),
                       ),
                     ),
