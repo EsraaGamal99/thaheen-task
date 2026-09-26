@@ -23,7 +23,7 @@
                 "id": "l1",
              "titleAr": "العظام",
               "titleEn": "Bones", 
-              "durationSec": 45, 
+              "durationSec": 30, 
               "img":"assets/images/anatomy1.png",
               "video": "assets/videos/player1.mp4" 
             
@@ -32,7 +32,7 @@
                 "id": "l2",
              "titleAr": "العظام 2",
               "titleEn": "Bones 2", 
-              "durationSec": 84, 
+              "durationSec": 30, 
               "img":"assets/images/anatomy2.jpg",
               "video": "assets/videos/player22.mp4" 
             
@@ -41,7 +41,7 @@
                 "id": "l3",
              "titleAr": "العظام 3",
               "titleEn": "Bones 3", 
-              "durationSec": 74, 
+              "durationSec": 241, 
               "img":"assets/images/anatomy3.jpg",
               "video": "assets/videos/player3.mp4" 
             
@@ -63,7 +63,7 @@
                 "id": "l4",
              "titleAr": "العضلات",
               "titleEn": "Muscles", 
-              "durationSec": 45, 
+              "durationSec": 30, 
               "img":"assets/images/anatomy4.jpeg",
               "video": "assets/videos/player1.mp4" 
             
@@ -72,7 +72,7 @@
                     "id": "l5",
                 "titleAr": "العضلات 2",
                 "titleEn": "Muscles 2", 
-                "durationSec": 84, 
+                "durationSec": 30, 
                 "img":"assets/images/anatomy5.jpeg",
                 "video": "assets/videos/player2.mp4" 
                 
@@ -81,7 +81,7 @@
                     "id": "l6",
                 "titleAr": "العضلات 3",
                 "titleEn": "Muscles 3", 
-                "durationSec": 74, 
+                "durationSec": 241, 
                 "img":"assets/images/anatomy6.jpeg",
                 "video": "assets/videos/player3.mp4" 
                 
@@ -114,7 +114,7 @@
                 "id": "l7",
              "titleAr": "القلب",
               "titleEn": "The Heart", 
-              "durationSec": 45, 
+              "durationSec": 30, 
               "img":"assets/images/physiology1.png",
               "video": "assets/videos/player1.mp4" 
             },
@@ -122,7 +122,7 @@
                     "id": "l8",
                 "titleAr": "القلب 2",
                 "titleEn": "The Heart 2", 
-                "durationSec": 84, 
+                "durationSec": 30, 
                 "img":"assets/images/physiology2.png",
                 "video": "assets/videos/player2.mp4" 
                 }
